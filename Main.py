@@ -1,4 +1,3 @@
-import keep_alive
 import discord
 import time
 from discord.ext import tasks
@@ -32,5 +31,4 @@ async def send_message():
     await client.get_channel(count_channel).send(x)
   await client.get_channel(message_channel).send(message)
 
-keep_alive.keep_alive()
 client.run(token)
