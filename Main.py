@@ -12,7 +12,7 @@ async def on_ready():
     await client.change_presence(activity=discord.Game(name="Opening Capsules..."))
     print('logged in as {0.user}'.format(client))
 
-@client.tree.command(name='Setup', description="Set time and message for the time capsule")
+@client.tree.command(name='setup', description="Set time and message for the time capsule")
 async def caliberate_id(interaction: discord.Interaction, time_in_days: int, message: str, count_channel:str, message_channel: str):
     Global time_in_days, message, count_channel, message_channel
     time_in_days = time_in_days
